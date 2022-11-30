@@ -24,7 +24,7 @@ EOL
   s.add_dependency 'savon', '~> 2'
   s.add_dependency 'rubyzip', '~> 2'
   s.add_dependency 'activesupport'
-  s.add_dependency 'hashie', '~> 4'
+  s.add_dependency 'hashie', '~> 5'
   s.add_dependency 'thor'
   s.add_dependency 'listen'
   s.add_dependency 'rb-fsevent'
