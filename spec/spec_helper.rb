@@ -35,3 +35,11 @@ Savon.configure do |config|
 end
 
 Savon::Spec::Fixture.path = File.join(File.dirname(__FILE__), 'fixtures/requests')
+
+# Monkey patch the old URI.escape method that was removed in Ruby 3.
+# It is called by the old version of wasabi that is required to metaforce.
+module URI
+  def URI.escape(url)
+    CGI.escape(url)
+  end
+end
