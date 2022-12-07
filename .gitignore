@@ -7,3 +7,6 @@ deploy.zip
 retrieve.zip
 test.rb
 .metaforce.yml
+Vagrantfile
+.vagrant
+.idea
